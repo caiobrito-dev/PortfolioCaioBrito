@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'dark': '#0a0a0a',
+              'red-accent': '#e53e3e',
+            },
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+</head>
+<body class="bg-dark text-white font-inter" style="background-image: linear-gradient(to bottom, #191919, #2b0c0c);">
+
+ 
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-sm shadow-lg p-4 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto flex justify-center items-center px-4">
+            <div class="space-x-8 text-lg font-medium">
+                <a href="#inicio" class="hover:text-red-accent transition-colors duration-300">Início</a>
+                <a href="#sobre" class="hover:text-red-accent transition-colors duration-300">Sobre</a>
+                <a href="#projetos" class="hover:text-red-accent transition-colors duration-300">Projetos</a>
+                <a href="#contatos" class="hover:text-red-accent transition-colors duration-300">Contatos</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de Início com fundo em gradiente e foto de perfil -->
+    <section id="inicio" class="flex items-center justify-center text-center p-8 mt-20">
+        <div class="bg-dark/70 rounded-lg p-8 md:p-16 max-w-4xl shadow-lg border border-red-accent">
+            <img src="./imgs/Imagem do WhatsApp de 2025-09-10 à(s) 18.31.42_5450ff21.jpg" alt="Sua Foto de Perfil" class="rounded-full mx-auto mb-6 border-4 border-red-accent w-72">
+            <h1 class="text-2xl md:text-5xl font-bold mb-4 animate-pulse text-red-accent">Olá!!</h1>
+            <p class="text-lg md:text-2xl font-light leading-relaxed">Sou Caio B. de Brito, um desenvolvedor web focado em criar experiências digitais elegantes e minimalistas.</p>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim com fundo escuro sólido -->
+    <section id="sobre" class="flex items-center justify-center p-8">
+        <div class="max-w-3xl text-center bg-dark/70 rounded-lg p-8 md:p-16 shadow-lg border border-red-accent">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Sobre Mim</h2>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
+                Comecei minha jornada na programação há 4 anos, movido pela paixão em transformar ideias em realidade. Minha especialidade reside em Laravel e NodeJs, e busco sempre aprimorar minhas habilidades em desenvolvimento web. Acredito que a simplicidade no design é o caminho para a usabilidade e a beleza, e meu trabalho reflete essa filosofia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos com fundo escuro sólido -->
+    <section id="projetos" class="p-8 flex items-center justify-center">
+        <div class="container mx-auto pt-24 text-center bg-dark/70 rounded-lg p-8 md:p-16 shadow-lg border border-red-accent max-w-7xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Exemplo de Card de Projeto com imagem -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border-2 border-transparent transition-all duration-300 hover:border-red-accent transform hover:scale-105">
+                    <img src="./imgs/Captura de tela 2025-09-10 193356.png" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Date Night Flicks</h3>
+                        <p class="text-gray-400 text-sm mb-4">Desenvolvimento de uma aplicação web com Laravel.</p>
+                        <a href="#" class="inline-block text-red-accent border-b-2 border-transparent hover:border-red-accent transition-all duration-300">Ver Projeto &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border-2 border-transparent transition-all duration-300 hover:border-red-accent transform hover:scale-105">
+                    <img src="imgs/Captura de tela 2025-09-10 193930.png" alt="Imagem do Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">GameVault</h3>
+                        <p class="text-gray-400 text-sm mb-4">Criação de uma encicloplédia de Games com PHP.</p>
+                        <a href="#" class="inline-block text-red-accent border-b-2 border-transparent hover:border-red-accent transition-all duration-300">Ver Projeto &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg border-2 border-transparent transition-all duration-300 hover:border-red-accent transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/1a1a1a/e53e3e?text=Projeto+3" alt="Imagem do Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Site da companhia de turismo</h3>
+                        <p class="text-gray-400 text-sm mb-4">Desenvolvimento de um site para a empresa Briturismo.</p>
+                        <a href="#" class="inline-block text-red-accent border-b-2 border-transparent hover:border-red-accent transition-all duration-300">Ver Projeto &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato com fundo escuro sólido -->
+    <section id="contatos" class="flex items-center justify-center p-8">
+        <div class="max-w-2xl text-center bg-dark/70 rounded-lg p-8 md:p-16 shadow-lg border border-red-accent">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Contatos</h2>
+            <p class="text-lg md:text-xl mb-8 leading-relaxed text-gray-300">
+                Ficou interessado? Entre em contato comigo através dos links abaixo para conversarmos sobre novos projetos ou oportunidades.
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="https://wa.me/5553992022662?text=Olá, Vamos conversar sobre seus serviços web??" target="_blank">
+                    <div class="bg-green-500 size-16 rounded-full flex items-center justify-center text-4xl"><i class="fa-brands fa-whatsapp"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/caio-barcelos-de-brito-3150732a4/" target="_blank">
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-400 size-16 rounded-full flex items-center justify-center text-4xl"><i class="fa-brands fa-linkedin"></i></div>
+                </a>
+                <a href="https://github.com/caiobrito-dev" target="_blank">
+                    <div class="bg-gray-900 size-16 rounded-full flex items-center justify-center text-4xl"><i class="fa-brands fa-github"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center p-6 text-gray-400 border-t border-gray-800 bg-dark">
+        <p>&copy; 2024 Caio B. de Brito. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
