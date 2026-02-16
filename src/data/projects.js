@@ -36,6 +36,19 @@ const projects = [
     featured: true,
   },
   {
+    id: 'briturismo',
+    title: 'Briturismo',
+    subtitle: 'Sua porta de entrada para o mundo das viagens.',
+    description:
+      'Landing page moderna e responsiva desenvolvida para uma agência de turismo, focada em apresentar pacotes de viagens e serviços exclusivos. Com um design vibrante e navegação intuitiva, o projeto destaca a beleza dos destinos e facilita o contato dos clientes.',
+    technologies: ['React', 'Vite', 'TailwindCSS'],
+    thumbnail: '/images/Briturismo/Home.png',
+    images: ['/images/Briturismo/Home.png'],
+    liveUrl: 'https://briturismo-landing-page.vercel.app/',
+    githubUrl: null,
+    featured: true,
+  },
+  {
     id: 'gamevault',
     title: 'GameVault',
     subtitle: 'O universo dos games na ponta dos seus dedos!',
@@ -74,30 +87,6 @@ const projects = [
     ],
     liveUrl: null,
     githubUrl: 'https://github.com/caiobrito-dev/DateNightFlicksLaravel',
-  },
-  {
-    id: 'ecommerce',
-    title: 'Ecommerce React',
-    subtitle: 'A primeira vitrine digital que criei!',
-    description:
-      'Um projeto inicial de ecommerce feito para praticar React, permitindo explorar a construção de interfaces dinâmicas e interativas. Serve como exemplo de aprendizado e evolução na criação de aplicações web modernas.',
-    technologies: ['React', 'Integração com API'],
-    thumbnail: '/images/Ecommerce/Home.png',
-    images: ['/images/Ecommerce/Home.png'],
-    liveUrl: null,
-    githubUrl: 'https://github.com/caiobrito-dev/React-Ecommerce',
-  },
-  {
-    id: 'chatbot',
-    title: 'ChatBot MindFocus',
-    subtitle: 'A tecnologia que apoia a saúde infantil!',
-    description:
-      'Este chatbot foi desenvolvido para o projeto MindFocus do ITEC, auxiliando profissionais da saúde na detecção de TDAH em crianças. A aplicação interativa facilita o registro de informações e fornece suporte ao diagnóstico de forma prática e segura.',
-    technologies: ['Flutter', 'Dart'],
-    thumbnail: '/images/Chatbot/main.png',
-    images: ['/images/Chatbot/main.png'],
-    liveUrl: null,
-    githubUrl: null,
   },
 ];
 
