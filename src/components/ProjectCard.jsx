@@ -30,7 +30,7 @@ export default function ProjectCard({ project, index, onClick }) {
             <div
                 style={{
                     position: 'relative',
-                    height: 200,
+                    height: 240,
                     overflow: 'hidden',
                 }}
             >
@@ -76,33 +76,7 @@ export default function ProjectCard({ project, index, onClick }) {
                         ★ Destaque
                     </div>
                 )}
-                {/* Live link icon */}
-                {project.liveUrl && (
-                    <motion.a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        style={{
-                            position: 'absolute',
-                            top: 12,
-                            left: 12,
-                            width: 36,
-                            height: 36,
-                            borderRadius: 10,
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            background: 'rgba(10, 22, 40, 0.7)',
-                            backdropFilter: 'blur(8px)',
-                            color: '#fff',
-                            border: '1px solid rgba(59, 130, 246, 0.2)',
-                        }}
-                        whileHover={{ scale: 1.1, borderColor: 'rgba(59, 130, 246, 0.6)' }}
-                    >
-                        <HiExternalLink size={16} />
-                    </motion.a>
-                )}
+
             </div>
 
             {/* Content */}
@@ -149,6 +123,41 @@ export default function ProjectCard({ project, index, onClick }) {
                         <span className="tech-badge">+{project.technologies.length - 4}</span>
                     )}
                 </div>
+
+                {/* Live link button */}
+                {project.liveUrl && (
+                    <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.4rem',
+                            marginTop: '1rem',
+                            padding: '0.5rem 1rem',
+                            fontSize: '0.85rem',
+                            fontWeight: 600,
+                            color: '#fff',
+                            background: 'linear-gradient(135deg, var(--color-primary), var(--color-primary-dark))',
+                            border: 'none',
+                            borderRadius: 10,
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                            boxShadow: '0 3px 10px rgba(59, 130, 246, 0.25)',
+                            transition: 'all 0.15s ease',
+                        }}
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: '0 5px 15px rgba(59, 130, 246, 0.4)',
+                            transition: { duration: 0.15 },
+                        }}
+                    >
+                        <HiExternalLink size={15} />
+                        Ver ao Vivo
+                    </motion.a>
+                )}
             </div>
         </motion.div>
     );
