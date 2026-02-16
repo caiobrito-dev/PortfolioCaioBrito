@@ -6,9 +6,9 @@ export default function ProjectCard({ project, index, onClick }) {
         <motion.div
             layout
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0, transition: { delay: index * 0.1, duration: 0.5, ease: 'easeOut' } }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.15 }}
             onClick={onClick}
             style={{
                 borderRadius: 16,
@@ -17,11 +17,12 @@ export default function ProjectCard({ project, index, onClick }) {
                 position: 'relative',
                 background: 'var(--color-surface)',
                 border: '1px solid var(--color-surface-border)',
-                transition: 'all 0.4s ease',
+                transition: 'transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease',
             }}
             whileHover={{
                 y: -8,
                 boxShadow: '0 20px 50px rgba(59, 130, 246, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.3)',
+                transition: { duration: 0.15 },
             }}
             className="project-card"
         >
@@ -40,7 +41,7 @@ export default function ProjectCard({ project, index, onClick }) {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
-                        transition: 'transform 0.5s ease',
+                        transition: 'transform 0.2s ease',
                     }}
                     whileHover={{ scale: 1.08 }}
                 />

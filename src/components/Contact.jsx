@@ -69,14 +69,15 @@ export default function Contact() {
                         >
                             <div
                                 style={{
-                                    width: 72,
-                                    height: 72,
-                                    borderRadius: 18,
+                                    width: 100,
+                                    height: 100,
+
+                                    borderRadius: 24,
                                     background: social.gradient,
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    fontSize: '2rem',
+                                    fontSize: '2.8rem',
                                     color: '#fff',
                                     boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
                                     transition: 'box-shadow 0.3s',
@@ -86,7 +87,7 @@ export default function Contact() {
                             </div>
                             <span
                                 style={{
-                                    fontSize: '0.85rem',
+                                    fontSize: '1rem',
                                     fontWeight: 500,
                                     color: 'var(--color-text-muted)',
                                 }}
