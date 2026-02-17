@@ -273,4 +273,20 @@ body::before {
   .section-title {
     font-size: 2rem;
   }
+
+  .hero-section {
+    align-items: flex-start !important;
+    padding-top: 7rem !important;
+    height: auto !important;
+  }
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
 }

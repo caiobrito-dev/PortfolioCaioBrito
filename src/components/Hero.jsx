@@ -45,15 +45,7 @@ export default function Hero() {
     return (
         <section
             id="inicio"
-            style={{
-                minHeight: '100vh',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '2rem 1.5rem',
-                position: 'relative',
-                overflow: 'hidden',
-            }}
+            className="hero-section"
         >
             {/* Background photo overlay */}
             <div
