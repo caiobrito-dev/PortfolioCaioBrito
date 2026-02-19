@@ -1,5 +1,22 @@
 const projects = [
   {
+    id: 'joalheria-aurora',
+    title: 'Aurora Alianças',
+    subtitle: 'Alianças de casamento e noivado em ouro 18k com design exclusivo.',
+    description:
+      'Aurora Alianças é uma joalheria online especializada em alianças de casamento e noivado em ouro 18k. O projeto oferece uma coleção exclusiva com design premium, atendimento personalizado e garantia vitalícia, proporcionando aos casais um símbolo eterno de seu amor.',
+    technologies: ['React', 'Vite', 'TailwindCSS'],
+    thumbnail: '/images/Joalheria/Screenshot1.png',
+    images: [
+      '/images/Joalheria/Screenshot1.png',
+      '/images/Joalheria/Screenshot2.png',
+      '/images/Joalheria/Screenshot3.png',
+    ],
+    liveUrl: 'https://joalheriaaurora.vercel.app/',
+    githubUrl: null,
+    featured: true,
+  },
+  {
     id: 'prompt-studio',
     title: 'Prompt Studio',
     subtitle: 'Transforme ideias em prompts profissionais para gerar imagens incríveis com IA.',
