@@ -144,9 +144,13 @@ export default function About() {
                                         background: `rgba(59, 130, 246, 0.1)`,
                                     }}
                                     initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
+                                    whileInView={{ 
+                                        opacity: 1, 
+                                        y: 0, 
+                                        transition: { delay: i * 0.05, duration: 0.4 } 
+                                    }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: i * 0.05, duration: 0.3 }}
+                                    transition={{ duration: 0.15 }}
                                 >
                                     <skill.icon size={20} color={skill.color} />
                                     <span
