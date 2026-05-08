@@ -1,10 +1,23 @@
 const projects = [
   {
-    id: 'joalheria-aurora',
-    title: 'Aurora Alianças',
+    id: 'elixir-drinks',
+    title: 'Elixir Drinks',
+    subtitle: 'A Magia e a Alquimia dos Eventos',
+    description:
+      'Uma plataforma elegante e moderna que apresenta serviços de coquetelaria premium para eventos exclusivos como casamentos, formaturas e celebrações corporativas. O projeto destaca a exclusividade dos drinks, o atendimento personalizado e o padrão de qualidade \'Elixir\' na região sul.',
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    thumbnail: '/images/Elixir/image.png',
+    images: ['/images/Elixir/image.png'],
+    liveUrl: 'https://elixir-drinks-seven.vercel.app/',
+    githubUrl: null,
+    featured: true,
+  },
+  {
+    id: 'joalheria-fossati',
+    title: 'Joalheria Fossati',
     subtitle: 'Alianças de casamento e noivado em ouro 18k com design exclusivo.',
     description:
-      'Aurora Alianças é uma joalheria online especializada em alianças de casamento e noivado em ouro 18k. O projeto oferece uma coleção exclusiva com design premium, atendimento personalizado e garantia vitalícia, proporcionando aos casais um símbolo eterno de seu amor.',
+      'Joalheria Fossati é uma joalheria online especializada em alianças de casamento e noivado em ouro 18k. O projeto oferece uma coleção exclusiva com design premium, atendimento personalizado e garantia vitalícia, proporcionando aos casais um símbolo eterno de seu amor.',
     technologies: ['React', 'Vite', 'TailwindCSS'],
     thumbnail: '/images/Joalheria/Screenshot1.png',
     images: [
@@ -40,7 +53,7 @@ const projects = [
     title: 'Presente para Parceiros',
     subtitle: 'Um site feito para presentear quem você ama.',
     description:
-      'Um site interativo e carinhoso feito para dar de presente ao seu parceiro ou parceira. Com animações suaves e um design acolhedor, é a forma perfeita de surpreender alguém especial com uma mensagem digital personalizada.',
+      'Um site interativo e carinhoso feito para dar de presente ao seu parceiro ou parceira. Com animações suaves e um design acolhedor, é a forma perfeita de surpreender alguém especial com uma message digital personalizada.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'TailwindCSS'],
     thumbnail: '/images/Niver/Inicio.png',
     images: [
@@ -64,28 +77,6 @@ const projects = [
     liveUrl: 'https://briturismo-landing-page.vercel.app/',
     githubUrl: null,
     featured: true,
-  },
-  {
-    id: 'gamevault',
-    title: 'GameVault',
-    subtitle: 'O universo dos games na ponta dos seus dedos!',
-    description:
-      'GameVault é uma plataforma que funciona como uma enciclopédia de jogos e consoles, permitindo aos usuários consultar informações detalhadas sobre jogos e verificar em quais plataformas eles estão disponíveis. É uma ferramenta completa para gamers que desejam organizar e explorar seus jogos favoritos.',
-    technologies: ['PHP', 'MySQL', 'TailwindCSS'],
-    thumbnail: '/images/GameVault/Home2.png',
-    images: [
-      '/images/GameVault/Home.png',
-      '/images/GameVault/Home2.png',
-      '/images/GameVault/Jogos.png',
-      '/images/GameVault/Plataformas.png',
-      '/images/GameVault/AdicionarJogo.png',
-      '/images/GameVault/Cadastro.png',
-      '/images/GameVault/Gerenciar.png',
-      '/images/GameVault/Gerenciar2.png',
-      '/images/GameVault/Login.png',
-    ],
-    liveUrl: null,
-    githubUrl: 'https://github.com/caiobrito-dev/GameVault-Tradicional',
   },
   {
     id: 'date-night',

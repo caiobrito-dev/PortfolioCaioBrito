@@ -67,8 +67,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
         <Projects />
+        <Services />
         <Contact />
       </main>
       <Footer />
