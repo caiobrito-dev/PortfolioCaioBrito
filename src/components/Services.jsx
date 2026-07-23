@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { HiGlobeAlt, HiDeviceMobile, HiShoppingCart, HiCode, HiSupport, HiLightningBolt } from 'react-icons/hi';
+import { HiGlobeAlt, HiDeviceMobile, HiShoppingCart, HiCode, HiSupport, HiLightningBolt, HiSparkles } from 'react-icons/hi';
 import ScrollReveal from './ScrollReveal';
 
 const services = [
@@ -23,6 +23,13 @@ const services = [
         description:
             'Sistemas web sob medida como agendamentos online, dashboards, painéis administrativos e ferramentas internas para otimizar a rotina do seu negócio.',
         highlights: ['Sob medida', 'Painel admin', 'Integrações'],
+    },
+    {
+        icon: HiSparkles,
+        title: 'Automações para WhatsApp',
+        description:
+            'Atendimento automatizado inteligente 24/7 integrado ao WhatsApp. Aumente suas vendas e melhore o suporte com respostas instantâneas e humanizadas.',
+        highlights: ['Atendimento 24/7', 'Automação', 'Respostas Humanizadas'],
     },
     {
         icon: HiSupport,
